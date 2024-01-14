@@ -9,3 +9,7 @@ def home():
 @app.route('/about')
 def about():
     return 'About'
+    
+@app.route('/', subdomain='home')
+def homehome():
+    return 'this is subdomain home'
